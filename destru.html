@@ -45,7 +45,32 @@
 
 		let {detalhes: {fabricante,  modelo, bateria = 'nao infrmado'}} = produto
 
-		console.log(fabricante,modelo, bateria)
+		//console.log(fabricante,modelo, bateria)
+
+		//==============================
+
+
+		//array 
+		/*let arr = [10, 20, 30, 40]
+
+		function teste([a, b, , c, d = 100]){
+			console.log(a, b, c, d)
+		}
+
+		teste(arr)*/
+
+		//objeto
+		let obj = {
+			a: 10,
+			b: 20,
+			c: 30,
+			d: 40
+		}
+
+		function teste({a,b}){
+			console.log(a,b)
+		}
+		teste(obj)
 
 	</script>
 
