@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OO</title>
+</head>
+<body>
+	press F12		
+	<a href="ol.html">Objetos literais</a>						 
+												
+<script type="text/javascript">  
+	/*
+	//modelo do objeto
+	class ContaBancaria {
+		//agencia
+		//numeroConta
+		//saldo
+		//limite
+		constructor(){
+			this.agencia = 1075
+			this.numeroConta = 12431
+			this.saldo = 50
+			this.limite = 450
+		}
+
+		depositar(valorDeposito){
+			this.saldo += valorDeposito
+		}
+		sacar(valorSaque){
+			this.saldo -= valorSaque
+		}
+		consultarSaldo(){
+			return this.saldo
+		}
+	}
+
+	let x = new ContaBancaria()
+	console.log(x.consultarSaldo())
+	x.depositar(450)
+	console.log(x.consultarSaldo())
+	x.sacar(250)
+	console.log(x.consultarSaldo())
+	*/
+
+
+	//software marcenaria
+	//cadeira e sofa
+
+	//cadeira procedural=============
+
+	/*let qtd_pernas = 4
+	let giratoria = false
+	let cor = 'azul'
+
+	//array de cadeiras
+	let cadeiras = Array()
+
+	cadeiras[0] = Array()
+	cadeiras[0]['qtd_pernas'] = 4
+	cadeiras[0]['giratoria'] = false
+	cadeiras[0]['cor'] = 'azul'
+
+	cadeiras[1] = Array()
+	cadeiras[1]['qtd_pernas'] = 1
+	cadeiras[1]['giratoria'] = true
+	cadeiras[1]['cor'] = 'vermelha'
+
+
+	function girar_cadeira(indice){
+		if(cadeiras[indice]['giratoria'] === true){
+			console.log('girou')
+		}else{
+			console.log('não é giratoria')
+		}
+	}
+
+	function add_cadeira(qtd_pernas, giratoria, cor){
+		cadeiras['qtd_pernas'] = qtd_pernas
+		cadeiras['giratoria'] = giratoria
+		cadeiras['cor'] = cor
+
+		cadeira.push(cadeira)
+	}
+
+	add_cadeira(4, false, 'verde')
+
+	console.log(cadeiras)
+
+	//girar_cadeira(1)*/
+
+	//cadeira OO=============
+
+/*	class Cadeira {
+		constructor (qtd_pernas, giratoria, cor){
+ 			this.qtd_pernas = qtd_pernas
+ 			this.giratoria = giratoria
+ 			this.cor = cor
+		}
+
+		girarCadeira(){
+			if(this.giratoria === true){
+				console.log('girou')
+			} else {
+				console.log('não é giratoria')
+			}		
+		}
+	}
+
+
+	let cadeiras = Array()
+
+	cadeiras.push(new Cadeira(4, false, 'azul'))
+	cadeiras.push(new Cadeira(1, true, 'verde'))
+
+
+	console.log(cadeiras)*/
+
+	/*class Tv {
+		constructor(){
+			this._relacaoCanais = Array(2, 4, 5, 7, 10)
+			this._canalAtivo = 5
+			this._volume = 5
+		}
+
+		//getter setters
+		get canalAtivo(){
+			return this._canalAtivo
+		}
+
+		set canalAtivo(canal){
+			if(this._relacaoCanais.indexOf(canal) !== -1){
+				this._canalAtivo = canal
+			}
+		}
+	}
+
+	let tv = new Tv()
+
+	tv.canalAtivo = 10
+	console.log(tv.canalAtivo)*/
+	
+
+	//Herança==
+
+	class Animal {
+		constructor(cor, tamanho, peso){
+			this.cor = cor			
+			this.tamanho = tamanho
+			this.peso = peso
+		}
+
+		dormir(){
+			console.log('dormiu')
+		}
+	}
+
+
+	class Passaro extends Animal {
+		constructor(bico, cor, tamanho, peso){
+			super(cor, tamanho, peso)
+			this.bico = bico
+		}
+
+		voar(){console.log('voou')}
+	}
+
+	class Papagaio extends Passaro {
+		constructor(sabeFalar, cor, tamanho, peso){
+			super('medio', cor, tamanho, peso)
+			this.sabeFalar = sabeFalar
+		}
+
+		falar(){
+			console.log('falou')
+		}
+	}
+
+	class Avestruz extends Passaro {
+		constructor(){
+			super('grande', 'preto e branco', 200, 15000)
+		}
+
+		enterrarCabeca(){
+			console.log('enterrou a cabeça')
+		}
+
+		voar(){
+			console.log('não voa')
+		}
+	}
+
+	
+	let papagaio = new Papagaio(true, 'verde', 20, 400)
+	console.log(papagaio)
+
+	papagaio.voar()
+
+	let avestruz = new Avestruz()
+	console.log(avestruz)
+	avestruz.enterrarCabeca()
+	avestruz.voar()
+	
+	
+</script>
+</body>
+</html>

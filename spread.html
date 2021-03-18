@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spread&rest</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		//contexto spread 
+		//spread=espalhar
+
+		//string
+		let tituloArtigo = 'Como utiliazar operador rest/spread'
+
+		console.log(tituloArtigo)
+		console.log(...tituloArtigo)
+
+		//arrays
+		let listaCursos1 = ['NojeJS e MongoDB', 'ES6, Typrscript e Angular 4']
+		let listaCursos2 = ['Multiplataforma Android/IOS', 'Intro ao GNU/Linux']
+		let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+		console.log(listaCursosCompleto)
+
+		//objetos 
+		let pessoa = {
+			nome: 'Joao',
+			idade: 24
+		}
+
+		let clone = {
+			endereco: 'Rua A', ...pessoa
+		}
+
+		console.log(clone)
+
+		//===========================
+
+		//contexto rest
+
+		function soma(...param/*vai juntar todos parametro e colocar em um []*/){
+			let resultado = 0
+
+			console.log(param)
+
+			return resultado
+		}
+
+		soma(3, 8, 5, 7)
+
+	</script>
+</body>
+</html>

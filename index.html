@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ECMA</title>
+	</head>
+	<body>
+
+		<a href="oo.html">OO</a>
+		<script type="text/javascript">
+			//using template string ``
+			let nome = 'Vitor'
+			console.log(`Olá ${nome}, tudo bem com você?`)
+
+			//functions default
+
+			function contarHistoria(personagem = 'loko', atividade = 'morder todo mundo ', nome_dono = 'lokao'){
+				document.write(`Era uma vez, um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nome_dono} e eles viveram felizes para sempre! <br>`)
+			}
+			//contarHistoria(undefined, 'enterrar ossos', 'lokasso')
+
+			//arrow function
+
+			/*let quadrado = function(x) {
+				return x*x
+			}*/ //função tradicional
+
+			//let quadrado = x => x * x // arrow function
+
+			//document.write(quadrado(3,3))
+
+
+			/*let parOuImpar = function(numero){
+				if (numero % 2 === 0 ){
+					return 'par'
+				} else {
+					return 'impar'
+				}
+			}*/
+
+			//let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'impar' //return implicito
+
+			//document.write(parOuImpar(6))
+
+		</script>
+	</body>
+</html>

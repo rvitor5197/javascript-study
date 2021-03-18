@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funcções</title>
+</head>
+<body>
+<a href="proto.html">proto</a>
+	<script type="text/javascript">
+		
+		/*let Carro = function(){
+			this.cor = "Amarelo"
+			this.modelo = 'Chevete'
+			this.velocidadeAtual = 0
+			this.velocidadeMaxima = 180
+
+			this.acelerar = function(){
+				let velocidade = this.getVelocidadeAtual() + 10
+				if(velocidade > this.velocidadeMaxima){
+					velocidade = this.velocidadeMaxima
+				}
+				this.setVelocidadeAtual(velocidade)
+			}
+			this.getVelocidadeAtual = function(){
+				return this.velocidadeAtual
+			}
+			this.setVelocidadeAtual = function(velocidadeAtual){
+				this.velocidadeAtual = velocidadeAtual
+			}	
+		}
+
+		/*let carro = new Carro()
+
+		console.log(carro.getVelocidadeAtual())
+		carro.acelerar()
+		console.log(carro.getVelocidadeAtual())*/
+/*
+		let carro = new Carro()
+
+		console.log(carro.getVelocidadeAtual())
+		carro.acelerar()
+		console.log(carro.getVelocidadeAtual())
+		carro.acelerar()
+		console.log(carro.getVelocidadeAtual())*/
+
+
+		//factory
+
+		let Bicicleta1 = {
+			cor: 'branca',
+			marcha: 'unica',
+			aro: 12,
+			pedalar(){console.log('pedalou')}
+		}
+
+		console.log(Bicicleta1)
+
+		//==========================================
+		let BicicletaFactory = function(cor, marcha, aro){
+			return {
+				cor,
+				marcha,
+				aro,
+				pedalar(){console.log('pedalou')}
+			}
+		}
+
+		let Bicicleta2 = BicicletaFactory('Vermelha', '18', 26)
+		console.log(Bicicleta2)
+
+		console.log(Bicicleta2.cor)
+		Bicicleta2.pedalar()
+
+	</script>
+
+</body>
+</html>

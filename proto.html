@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype</title>
+</head>
+<body>
+	<a href="spread.html">spread</a>
+	<script type="text/javascript">
+		
+		//aviao
+		//atributor cor e modelo; metodo levantar voo
+
+		//objeto literal
+		/*let a1 = {
+			cor: 'branco',
+			modelo: 'airbus a380',
+			levantarVoo: function(){console.log('levantou voo')}
+		}
+
+		//funcao construtora
+
+		let AviaoF = function (){
+			this.cor = 'azul',
+			this.modelo = 'boing 287',
+			this.levantarVoo = function(){console.log('levantou voo')}
+		}
+
+		let a2 = new AviaoF()
+
+		///classe
+		class AviaoC {
+			constructor(){
+				this.cor = 'vermelho'
+				this.modelo = 'embraer 557'
+			}
+
+			levantarVoo(){
+				console.log('levantou voo')
+			}
+		}
+
+		let a3 = new AviaoC()
+
+		console.log(a1)
+		console.log(a2)
+		console.log(a3)*/
+
+		//============================
+
+		//object Prototype
+
+		let animal = {attr1: 'a'}
+		let vertebrado = {__proto__: animal, attr2: 'b'}
+		let ave = {__proto__: vertebrado, attr3: 'c'}
+
+		console.log(ave.attr2, ave.attr1)
+
+	</script>
+</body>
+</html>
