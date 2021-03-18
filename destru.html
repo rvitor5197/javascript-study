@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destructuring</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		let frutas = ['Maçã', 'uva', 'Mamão', 'pera']
+
+		//let [a, b, , c] = frutas//pular indice
+
+		let [a, b, c, d, e = 'abacate'] = frutas
+
+		//console.log(a, b, c, d, e)
+
+		let coisas = [['Maçã', 'uva', 'Mamão', 'pera'],['jose', 'maria']]
+		let [,[,n2]] = coisas
+
+		console.log(n2)
+
+	</script>
+
+</body>
+</html>
