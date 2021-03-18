@@ -19,7 +19,33 @@
 		let coisas = [['Maçã', 'uva', 'Mamão', 'pera'],['jose', 'maria']]
 		let [,[,n2]] = coisas
 
-		console.log(n2)
+		//console.log(n2)
+
+		//========================
+
+		let produto = {
+			descricao: 'Notbook',
+			preco: 1800,
+			detalhes: {
+				fabricante: 'acer',
+				modelo: 'aspire'
+			}
+		}
+		//composicao
+		//é um
+		//tem um
+
+
+		//token muda
+		//array => []
+		//objeto => {}
+		//let {descricao, preco} = produto
+
+		//let { descricao: d, preco: p } = produto
+
+		let {detalhes: {fabricante,  modelo, bateria = 'nao infrmado'}} = produto
+
+		console.log(fabricante,modelo, bateria)
 
 	</script>
 
